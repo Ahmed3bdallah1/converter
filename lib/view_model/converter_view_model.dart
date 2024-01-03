@@ -5,7 +5,6 @@ import '../core/bloc/converter_event.dart';
 class ConverterViewModel extends ChangeNotifier {
   final ConverterBloc converterBloc;
 
-
   ConverterViewModel(this.converterBloc);
 
   String _convertedNumber = '';
