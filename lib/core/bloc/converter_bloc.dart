@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'converter_event.dart';
 import 'converter_state.dart';
@@ -7,6 +8,8 @@ class ConverterBloc extends Bloc<ConversionEvent, ConverterState> {
     on<BinaryToDecimalEvent>(_mapConvertBinaryToDecimalToState);
     on<DecimalToBinaryEvent>(_mapConvertDecimalToBinaryToState);
   }
+
+  static ConverterBloc get(BuildContext context) => BlocProvider.of(context);
 
   void _mapConvertBinaryToDecimalToState(
       BinaryToDecimalEvent event, Emitter<ConverterState> emit) {

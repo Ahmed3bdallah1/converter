@@ -14,9 +14,7 @@ class ConverterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    final viewModel = ConverterViewModel(
-      BlocProvider.of<ConverterBloc>(context),
-    );
+    final viewModel = ConverterViewModel(ConverterBloc.get(context));
 
     return Scaffold(
       appBar: AppBar(
