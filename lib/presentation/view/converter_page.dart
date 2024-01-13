@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../core/bloc/converter_state.dart';
-import '../core/bloc/converter_bloc.dart';
-import '../view_model/converter_view_model.dart';
+import '../../view_model/converter_view_model.dart';
+import '../bloc/converter_bloc.dart';
+import '../bloc/converter_state.dart';
 
 class ConverterPage extends StatelessWidget {
   final _binaryNumberController = TextEditingController();

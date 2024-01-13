@@ -1,6 +1,6 @@
-import 'package:converter_app/core/bloc/converter_bloc.dart';
 import 'package:flutter/cupertino.dart';
-import '../core/bloc/converter_event.dart';
+import '../presentation/bloc/converter_bloc.dart';
+import '../presentation/bloc/converter_event.dart';
 
 class ConverterViewModel extends ChangeNotifier {
   final ConverterBloc converterBloc;
